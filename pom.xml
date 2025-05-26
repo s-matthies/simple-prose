@@ -4,6 +4,10 @@
   <groupId>de.htw_berlin.prose</groupId>
   <artifactId>prose-sample</artifactId>
   <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>my-prose-app</name>
+  <url>http://maven.apache.org</url>
+
   <build>
     <plugins>
       <plugin>
@@ -16,9 +20,6 @@
       </plugin>
     </plugins>
   </build>
-  <version>1.0-SNAPSHOT</version>
-  <name>my-prose-app</name>
-  <url>http://maven.apache.org</url>
 
   <repositories>
     <repository>
@@ -32,10 +33,15 @@
 
   <distributionManagement>
     <repository>
-      <id>github</id>
+      <id>my-github</id>
       <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/s-matthies/simple-prosa</url>
+      <url>https://maven.pkg.github.com/s-matthies/simple-prose</url>
     </repository>
+    <snapshotRepository>
+      <id>my-github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/s-matthies/simple-prose</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <dependencies>
@@ -50,6 +56,12 @@
       <groupId>de.htw_berlin.fb4.ossd</groupId>
       <artifactId>prose_builder</artifactId>
       <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20240205</version>
     </dependency>
   </dependencies>
 </project>
