@@ -14,15 +14,12 @@ public class SimpleProse implements Prose {
 
     @Override
     public String get() {
-        return getText(); // ruft unsere eigene Methode auf
+        return getText();
     }
 
-    // Returns the text of the prose by concatenating the text of each sentence
     public String getText() {
         StringBuilder sb = new StringBuilder();
-        for (Sentence sentence : sentences) {
-            sb.append(sentence.get()).append(" ");
-        }
+        sentences.forEach(sentence -> sb.append(sentence.get()).append("\n"));
         return sb.toString().trim();
     }
 }
