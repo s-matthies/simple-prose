@@ -52,5 +52,8 @@ It provides formatted weather information for different cities in a readable, pr
     - Value: Paste your API key here
 7. Confirm with "OK" and then "Apply"
 
-Alternative: You can directly enter the variable in the Environment variables field:
+**Another option: Direct Input**
+You can also enter the variable directly in the Environment variables field using format: `OPENWEATHER_API_KEY=your-api-key`
+Note: Run configurations containing sensitive data should not be shared or committed to version control.
+
 
