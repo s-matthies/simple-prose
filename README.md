@@ -1,9 +1,25 @@
-# simple-prose - Weather Text Generator
+# Simple Prose
 
-A Java application that converts weather data into natural language text, combining a simple prose processing library with OpenWeather API integration.
-Available via GitHub Packages, it provides formatted weather information for different cities in a readable, prose format.
+A simple prose builder for constructing text content from individual sentences, enhanced with weather data integration.
 
-## Features
+## Overview
+
+**Simple Prose** provides a flexible way to construct text content by registering and combining sentences. It serves two main purposes:
+
+1. **Basic Text Construction**: A simple system for building text content from individual sentences
+2. **Weather Integration**: Enhanced functionality to incorporate real-time weather data into your text content
+
+### Key Concepts
+- Simple sentence composition
+- Flexible text construction
+- Weather data integration
+
+## Weather Integration
+
+Converts weather data into natural language text, combining a simple prose processing library with OpenWeather API integration.
+It provides formatted weather information for different cities in a readable, prose format.
+
+### Features
 
 - Fetch real-time weather data for any city worldwide
 - Convert weather data into natural language sentences
