@@ -30,7 +30,7 @@ The project maintains the following source code repositories:
 
 ## Third-Party Dependencies
 
-See [DEPENDENCIES](DEPENDENCIES)
+See [DEPENDENCIES](DEPENDENCIES.md)
 
 ## Cryptography
 
