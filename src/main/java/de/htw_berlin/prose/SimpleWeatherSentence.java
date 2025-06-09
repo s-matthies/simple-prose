@@ -1,3 +1,12 @@
+/*
+ * Copyright (C) 2025 Sabine Matthies
+ *
+ * This program is free software under the terms of GPL-3.0.
+ * See the GNU General Public License for more details.
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 package de.htw_berlin.prose;
 
 import java.net.URI;
