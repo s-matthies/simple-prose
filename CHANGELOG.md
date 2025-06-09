@@ -8,14 +8,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Initial project setup
-- Added README.md with documentation
-- Added SECURITY.md with security guidelines
-- Added CONTRIBUTE.md with contribution guidelines
-- Added CODE_OF_CONDUCT.md with community guidelines
-- Added LICENSE file with GPL-3.0 license
-- Basic implementation of a simple prose application
-- Basic weather integration using OpenWeather API
+- Core Features
+    - Basic implementation of a simple prose application
+    - Weather integration using OpenWeather API
+
+- Documentation
+    - README.md with project documentation
+    - CONTRIBUTE.md with contribution guidelines
+    - SECURITY.md with security guidelines
+    - CODE_OF_CONDUCT.md with community guidelines
+
+- Legal
+    - LICENSE file with GPL-3.0 license
+
+- Project Setup
+    - Initial repository structure
+
 
 ### Changed
 - No changes yet
