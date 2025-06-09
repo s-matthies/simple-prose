@@ -18,10 +18,10 @@
 
 ## Test Dependencies
 
-### JUnit
-- Group ID: junit
-- Artifact ID: junit
-- Version: 3.8.1
-- License: Eclipse Public License 1.0
-- Source: https://github.com/junit-team/junit4
+### JUnit Jupiter
+- Group ID: org.junit.jupiter
+- Artifact ID: junit-jupiter
+- Version: 5.10.2
+- License: Eclipse Public License v2.0
+- Source: https://github.com/junit-team/junit5
 - Scope: Test
