@@ -8,7 +8,15 @@
   <name>my-prose-app</name>
   <url>http://maven.apache.org</url>
 
-  <build>
+  <licenses>
+  <license>
+    <name>GNU General Public License v3.0</name>
+    <url>https://www.gnu.org/licenses/gpl-3.0.txt</url>
+    <distribution>repo</distribution>
+  </license>
+</licenses>
+
+<build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
