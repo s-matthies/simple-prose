@@ -1,5 +1,6 @@
 # Simple Prose
 
+![Java](https://img.shields.io/badge/Java-23-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0--SNAPSHOT-blue.svg)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
