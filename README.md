@@ -1,5 +1,8 @@
 # Simple Prose
 
+![Version](https://img.shields.io/badge/version-1.0--SNAPSHOT-blue.svg)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 **Simple Prose** provides a flexible way to construct text content by registering and combining sentences. It serves two main purposes:
 
 1. **Basic Text Construction**: A simple system for building text content from individual sentences
@@ -82,5 +85,3 @@ Note: Run configurations containing sensitive data should not be shared or commi
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
-
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
