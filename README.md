@@ -1,9 +1,5 @@
 # Simple Prose
 
-A simple prose builder for constructing text content from individual sentences, enhanced with weather data integration.
-
-## Overview
-
 **Simple Prose** provides a flexible way to construct text content by registering and combining sentences. It serves two main purposes:
 
 1. **Basic Text Construction**: A simple system for building text content from individual sentences
