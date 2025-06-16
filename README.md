@@ -37,7 +37,7 @@ It provides formatted weather information for different cities in a readable, pr
    <settings>
      <servers>
        <server>
-         <id>github</id>
+         <id>simple-prose-github</id>
          <username>YOUR_GITHUB_USERNAME</username>
          <password>YOUR_GITHUB_TOKEN</password>
        </server>
@@ -50,7 +50,7 @@ It provides formatted weather information for different cities in a readable, pr
    ```xml
    <repositories>
      <repository>
-       <id>github</id>
+       <id>simple-prose-github</id>
        <url>https://maven.pkg.github.com/s-matthies/simple-prose</url>
      </repository>
    </repositories>
