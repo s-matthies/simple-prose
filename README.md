@@ -66,6 +66,32 @@ It provides formatted weather information for different cities in a readable, pr
    ```
    > Replace `VERSION` with the current version from the [Package Registry](https://github.com/s-matthies/simple-prose/packages/2519474)
 
+> **Important**: To use the weather integration features, you'll need a free API key from OpenWeather. Follow the steps below to set it up.
+
+## Open Weather API Key Configuration
+
+#### Getting an API Key
+1. Visit [OpenWeather](https://openweathermap.org/api)
+2. Create a free account
+3. Navigate to "My API Keys"
+4. Copy your API key
+
+#### Setting up in IntelliJ IDEA
+1. Click on the Run Configuration dropdown in the toolbar
+2. Select "Edit Configurations..."
+3. Select your Run Configuration or create a new one
+4. Find the "Environment variables" section
+5. Click the folder icon next to the field
+6. In the "Environment Variables" dialog:
+   - Click the Plus icon (+)
+   - Name: `OPENWEATHER_API_KEY`
+   - Value: Paste your API key here
+7. Confirm with "OK" and then "Apply"
+
+**Another option: Direct Input**
+You can also enter the variable directly in the Environment variables field using format: `OPENWEATHER_API_KEY=your-api-key`
+Note: Run configurations containing sensitive data should not be shared or committed to version control.
+
 
 ## Building from Source
 
@@ -85,33 +111,7 @@ It provides formatted weather information for different cities in a readable, pr
    ```
 
    > Make sure you have configured the OpenWeather API Key environment variable as described in the Configuration section before running the application.
-
-## Configuration 
-
-### API Key Configuration
-
-#### Getting an API Key
-1. Visit [OpenWeather](https://openweathermap.org/api)
-2. Create a free account
-3. Navigate to "My API Keys"
-4. Copy your API key
-
-#### Setting up in IntelliJ IDEA
-1. Click on the Run Configuration dropdown in the toolbar
-2. Select "Edit Configurations..."
-3. Select your Run Configuration or create a new one
-4. Find the "Environment variables" section
-5. Click the folder icon next to the field
-6. In the "Environment Variables" dialog:
-    - Click the Plus icon (+)
-    - Name: `OPENWEATHER_API_KEY`
-    - Value: Paste your API key here
-7. Confirm with "OK" and then "Apply"
-
-**Another option: Direct Input**
-You can also enter the variable directly in the Environment variables field using format: `OPENWEATHER_API_KEY=your-api-key`
-Note: Run configurations containing sensitive data should not be shared or committed to version control.
-
+   
 ## Contributing
 For contribution guidelines, please see [CONTRIBUTE.md](CONTRIBUTE.md).
 
