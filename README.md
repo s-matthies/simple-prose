@@ -84,6 +84,9 @@ It provides formatted weather information for different cities in a readable, pr
 You can also enter the variable directly in the Environment variables field using format: `OPENWEATHER_API_KEY=your-api-key`
 Note: Run configurations containing sensitive data should not be shared or committed to version control.
 
+## Contributing
+For contribution guidelines, please see [CONTRIBUTE.md](CONTRIBUTE.md).
+
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
