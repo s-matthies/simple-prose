@@ -1,3 +1,17 @@
+---
+name: Pull Request Template
+about: Template for creating pull requests
+title: ''
+labels: ''
+assignees: ''
+---
+
+## Description
+
+Please describe what this pull request does and why it is needed.
+
+[Rest des Templates bleibt unverändert...]
+
 ## Description
 
 Please describe what this pull request does and why it is needed.
