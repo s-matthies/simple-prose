@@ -29,7 +29,45 @@ It provides formatted weather information for different cities in a readable, pr
 - Maven
 - OpenWeather API Key
 
-## Installation and Build
+## Getting Started
+
+### Using as a Dependency
+1. Add the GitHub Package Registry to your Maven settings (`~/.m2/settings.xml`):
+   ```xml
+   <settings>
+     <servers>
+       <server>
+         <id>github</id>
+         <username>YOUR_GITHUB_USERNAME</username>
+         <password>YOUR_GITHUB_TOKEN</password>
+       </server>
+     </servers>
+   </settings>
+   ```
+   > **Note:** Replace `YOUR_GITHUB_USERNAME` and `YOUR_GITHUB_TOKEN` with your credentials. The token needs `read:packages` scope.
+
+2. Add the repository configuration to your project's `pom.xml`:
+   ```xml
+   <repositories>
+     <repository>
+       <id>github</id>
+       <url>https://maven.pkg.github.com/s-matthies/simple-prose</url>
+     </repository>
+   </repositories>
+   ```
+
+3. Add the dependency to your `pom.xml`:
+   ```xml
+   <dependency>
+     <groupId>com.github.s-matthies</groupId>
+     <artifactId>simple-prose</artifactId>
+     <version>VERSION</version>
+   </dependency>
+   ```
+   > Replace `VERSION` with the current version from the [Package Registry](https://github.com/s-matthies/simple-prose/packages/2519474)
+
+
+## Building from Source
 
 1. Clone the repository:
    ```bash
@@ -41,17 +79,7 @@ It provides formatted weather information for different cities in a readable, pr
    ```bash
    mvn clean install
    ```
-   
-3. Add the dependency to your project:
-```xml
-<dependency>
-    <groupId>de.htw_berlin.prose</groupId>
-    <artifactId>prose-sample</artifactId>
-    <version>1.0-SNAPSHOT</version>
-</dependency>
-```
-
-4. Run the application:
+3. Run the application:
    ```bash
    java -jar target/prose-sample-1.0-SNAPSHOT.jar
    ```
