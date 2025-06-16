@@ -51,10 +51,15 @@ Before creating an issue:
 
 ## Code of Conduct
 
+We are committed to fostering a welcoming, inclusive, and harassment-free community.
+
 Please follow our Code of Conduct. We expect all participants to:
 - Be respectful
 - Provide constructive feedback
 - Focus on substantive discussions
+- Avoid any form of harassment or discrimination
+
+If you experience or witness any unacceptable behavior, please contact the maintainer.
 
 ## Questions?
 
