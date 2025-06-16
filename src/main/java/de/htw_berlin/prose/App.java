@@ -30,6 +30,13 @@ public class App {
         SimpleWeatherSentence bangkokWeather = new SimpleWeatherSentence("Bangkok");
         SimpleWeatherSentence pragWeather = new SimpleWeatherSentence("Prag");
 
+        // SimpleSentence from joha1na
+        de.htw_berlin.fb4.examples.SimpleSentence simpleSentence1 = new de.htw_berlin.fb4.examples.SimpleSentence();
+
+        // SimpleSentence from eliseHtw
+        de.htw_berlin.fb4.elise.SimpleSentence simpleSentence2 = new de.htw_berlin.fb4.elise.SimpleSentence();
+
+
         // with SimpleProse
         SimpleProse simpleProse = new SimpleProse(List.of(berlinWeather, bangkokWeather, pragWeather
         ));
@@ -43,6 +50,8 @@ public class App {
         builder.register(berlinWeather);
         builder.register(bangkokWeather);
         builder.register(pragWeather);
+        builder.register(simpleSentence1);
+        builder.register(simpleSentence2);
 
         System.out.println("=== Output with ProseBuilder ===");
         System.out.println(builder.get());
