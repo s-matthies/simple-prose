@@ -60,7 +60,7 @@ It provides formatted weather information for different cities in a readable, pr
    ```xml
    <dependency>
      <groupId>com.github.s-matthies</groupId>
-     <artifactId>simple-prose</artifactId>
+     <artifactId>prose-sample</artifactId>
      <version>VERSION</version>
    </dependency>
    ```
