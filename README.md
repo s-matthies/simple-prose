@@ -18,11 +18,6 @@
 - Support for multiple cities simultaneously
 - Flexible output formatting using SimpleProse or ProseBuilder
 
-## Weather Integration
-
-Converts weather data into natural language text, combining a simple prose processing library with OpenWeather API integration.
-It provides formatted weather information for different cities in a readable, prose format.
-
 ## Prerequisites
 
 - Java 21+
