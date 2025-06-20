@@ -55,5 +55,9 @@ public class App {
 
         System.out.println("=== Output with ProseBuilder ===");
         System.out.println(builder.get());
+
+        System.out.println("=== Output with CollaborativeProse ===");
+        CollaborativeProse collaborativeProse = new CollaborativeProse();
+        collaborativeProse.printProse();
     }
 }
