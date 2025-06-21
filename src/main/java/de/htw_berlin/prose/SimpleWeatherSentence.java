@@ -61,7 +61,7 @@ public class SimpleWeatherSentence implements Sentence {
             return String.format("In %s sind es aktuell %.1f °C.", city, temperature);
 
         } catch (Exception e) {
-            return "Fehler beim Abrufen der Wetterdaten: " + e.getMessage();
+            return "Error while retrieving weather data: " + e.getMessage();
         }
     }
 }
