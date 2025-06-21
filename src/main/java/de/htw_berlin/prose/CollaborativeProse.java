@@ -4,21 +4,15 @@ import de.htw_berlin.fb4.ossd.prose.ProseBuilder;
 
 public class CollaborativeProse {
 
-    private ProseBuilder builder;
-    private final SimpleWeatherSentence berlinWeather;
-    private SimpleWeatherSentence bangkokWeather;
-    private SimpleWeatherSentence pragWeather;
-    private final de.htw_berlin.fb4.examples.SimpleSentence peerSentence1;
-    private final de.htw_berlin.fb4.elise.SimpleSentence peerSentence2;
-
+    private final ProseBuilder builder;
 
     public CollaborativeProse() {
         this.builder = new ProseBuilder();
-        this.berlinWeather = new SimpleWeatherSentence();
-        this.bangkokWeather = new SimpleWeatherSentence("Bangkok");
-        this.pragWeather = new SimpleWeatherSentence("Prag");
-        this.peerSentence1 = new de.htw_berlin.fb4.examples.SimpleSentence();
-        this.peerSentence2 = new de.htw_berlin.fb4.elise.SimpleSentence();
+        SimpleWeatherSentence berlinWeather = new SimpleWeatherSentence();
+        SimpleWeatherSentence bangkokWeather = new SimpleWeatherSentence("Bangkok");
+        SimpleWeatherSentence pragWeather = new SimpleWeatherSentence("Prag");
+        de.htw_berlin.fb4.examples.SimpleSentence peerSentence1 = new de.htw_berlin.fb4.examples.SimpleSentence();
+        de.htw_berlin.fb4.elise.SimpleSentence peerSentence2 = new de.htw_berlin.fb4.elise.SimpleSentence();
 
         builder.register(berlinWeather);
         builder.register(bangkokWeather);
