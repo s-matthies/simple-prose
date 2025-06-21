@@ -5,10 +5,7 @@
 ![Version](https://img.shields.io/badge/version-1.0--SNAPSHOT-orange.svg)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**Simple Prose** provides a flexible way to construct text content by registering and combining sentences. It serves two main purposes:
-
-1. **Basic Text Construction**: A simple system for building text content from individual sentences
-2. **Weather Integration**: Enhanced functionality to incorporate real-time weather data into your text content
+A flexible system for constructing text content by combining weather data and sentences from multiple contributors.
 
 ### Features
 
@@ -24,9 +21,33 @@
 - Maven
 - OpenWeather API Key
 
+## Components Used
+
+1. **Prose Builder**
+   - Repository: https://github.com/bs-jokri/prose-builder
+   - Artifact: `de.htw_berlin.fb4.ossd:prose_builder:1.0-SNAPSHOT`
+   - Provides the core text construction functionality
+
+2. **Peer Components**
+   - Sentence Component from [@joha1na](https://github.com/joha1na)
+      - Repository: https://github.com/joha1na/my-prose-app
+   - Sentence Component from [@eliseHtw](https://github.com/eliseHtw)
+      - Repository: https://github.com/eliseHtw/my-prose-app
+
+> **Note:** The system can be extended with additional sentence components.
+
+### Example Output
+
+> When running the application, you'll get a combined output from all components, for example:
+> ```
+> In Berlin sind es aktuell 25,7 °C.
+> Hallo, das ist ein einfacher Satz.
+> Ich esse heute Abend Salat
+> ```
+
 ## Getting Started
 
-### Using as a Dependency
+### Using as a Maven Dependency
 1. Add the GitHub Package Registry to your Maven settings (`~/.m2/settings.xml`):
    ```xml
    <settings>
