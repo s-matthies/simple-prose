@@ -27,7 +27,7 @@ A flexible system for constructing text content by combining weather data and se
 
    `Simple Prose` uses the Prose Builder as its foundation for text construction:
 
-   - [Repository](https://github.com/bs-jokri/prose-builder)
+   - [`bs-jokri/prose-builder`](https://github.com/bs-jokri/prose-builder)
    - Maven Artifact: `de.htw_berlin.fb4.ossd:prose_builder:1.0-SNAPSHOT`
    
 
