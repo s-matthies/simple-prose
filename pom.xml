@@ -4,7 +4,7 @@
   <groupId>de.htw_berlin.prose</groupId>
   <artifactId>prose-sample</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>my-prose-app</name>
   <url>http://maven.apache.org</url>
 
