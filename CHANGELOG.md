@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# [2.0.0] - 2025-06-23
+
+### Changed
+- Project structure has been refactored
+
+### Removed
+- CollaborativeProse functionality
+- Unused SimpleSentence instances
+- Removed repositories: github.com/eliseHtw, github.com/joha1na an their dependencies
+
 ## [1.0.0] - 2025-06-23
 
 ### Added
@@ -25,18 +35,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Initial repository structure
     -  Maven configuration 
     - OpenWeather API integration setup
-
-### Changed
-- No changes yet
-
-### Deprecated
-- No deprecations
-
-### Removed
-- No removals
-
-### Fixed
-- No fixes
 
 ### Security
 - Implemented basic security measures
