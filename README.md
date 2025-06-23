@@ -23,18 +23,21 @@ A flexible system for constructing text content by combining weather data and se
 
 ## Components Used
 
-1. **Prose Builder**
-   - Repository: https://github.com/bs-jokri/prose-builder
-   - Artifact: `de.htw_berlin.fb4.ossd:prose_builder:1.0-SNAPSHOT`
-   - Provides the core text construction functionality
+1. **Core Component**
+
+   `Simple Prose` uses the Prose Builder as its foundation for text construction:
+
+   - [Repository](https://github.com/bs-jokri/prose-builder)
+   - Maven Artifact: `de.htw_berlin.fb4.ossd:prose_builder:1.0-SNAPSHOT`
+   
 
 2. **Peer Components**
-   - Sentence Component from [@joha1na](https://github.com/joha1na)
-      - Repository: https://github.com/joha1na/my-prose-app
-   - Sentence Component from [@eliseHtw](https://github.com/eliseHtw)
-      - Repository: https://github.com/eliseHtw/my-prose-app
 
-> **Note:** The system can be extended with additional sentence components.
+   `Simple Prose` combines the following components to generate diverse sentence combinations:
+
+   - [`joha1na/my-prose-app`](https://github.com/joha1na/my-prose-app)
+   - [`eliseHtw/my-prose-app`](https://github.com/eliseHtw/my-prose-app)
+
 
 ### Example Output
 
