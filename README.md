@@ -21,33 +21,6 @@ A flexible system for constructing text content by combining weather data and se
 - Maven
 - OpenWeather API Key
 
-## Components Used
-
-1. **Core Component**
-
-   `Simple Prose` uses the Prose Builder as its foundation for text construction:
-
-   - [`bs-jokri/prose-builder`](https://github.com/bs-jokri/prose-builder)
-   - Maven Artifact: `de.htw_berlin.fb4.ossd:prose_builder:1.0-SNAPSHOT`
-   
-
-2. **Peer Components**
-
-   `Simple Prose` combines the following components to generate diverse sentence combinations:
-
-   - [`joha1na/my-prose-app`](https://github.com/joha1na/my-prose-app)
-   - [`eliseHtw/my-prose-app`](https://github.com/eliseHtw/my-prose-app)
-
-
-### Example Output
-
-> When running the application, you'll get a combined output from all components, for example:
-> ```
-> In Berlin sind es aktuell 25,7 °C.
-> Hallo, das ist ein einfacher Satz.
-> Ich esse heute Abend Salat
-> ```
-
 ## Getting Started
 
 ### Using as a Maven Dependency
@@ -65,15 +38,23 @@ A flexible system for constructing text content by combining weather data and se
    ```
    > **Note:** Replace `YOUR_GITHUB_USERNAME` and `YOUR_GITHUB_TOKEN` with your credentials. The token needs `read:packages` scope.
 
-2. Add the repository configuration to your project's `pom.xml`:
+2. Add both repository configurations to your project's `pom.xml`:
    ```xml
    <repositories>
      <repository>
        <id>simple-prose-github</id>
        <url>https://maven.pkg.github.com/s-matthies/simple-prose</url>
      </repository>
+     <repository>
+       <id>github</id>
+       <url>https://maven.pkg.github.com/bs-jokri/prose-builder</url>
+       <snapshots>
+         <enabled>true</enabled>
+       </snapshots>
+     </repository>
    </repositories>
    ```
+
 
 3. Add the dependency to your `pom.xml`:
    ```xml
