@@ -54,12 +54,11 @@ A flexible system for constructing text content by combining weather data and se
      </repository>
    </repositories>
    ```
-
-
+   
 3. Add the dependency to your `pom.xml`:
    ```xml
    <dependency>
-     <groupId>com.github.s-matthies</groupId>
+     <groupId>de.htw_berlin.prose</groupId>
      <artifactId>prose-sample</artifactId>
      <version>VERSION</version>
    </dependency>
