@@ -5,7 +5,7 @@
   <artifactId>prose-sample</artifactId>
   <packaging>jar</packaging>
   <version>2.0.0</version>
-  <name>my-prose-app</name>
+  <name>prose-sample</name>
   <url>http://maven.apache.org</url>
 
   <licenses>
