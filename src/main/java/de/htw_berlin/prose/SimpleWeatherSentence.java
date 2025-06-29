@@ -55,6 +55,11 @@ public class SimpleWeatherSentence implements Sentence {
             HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
+            // Prüfe den HTTP-Statuscode, bevor das Ergebnis verarbeitet wird
+            if (response.statusCode() != 200) {
+                return String.format("Wetterdaten für %s konnten nicht abgerufen werden (HTTP %d)", city, response.statusCode());
+            }
+
             JSONObject jsonResponse = new JSONObject(response.body());
             double temperature = jsonResponse.getJSONObject("main").getDouble("temp");
 
