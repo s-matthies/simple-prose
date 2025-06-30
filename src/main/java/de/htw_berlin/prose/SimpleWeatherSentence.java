@@ -55,6 +55,25 @@ public class SimpleWeatherSentence implements Sentence {
             HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
+            // Prüfe den HTTP-Statuscode und gib spezifische Fehlermeldungen aus
+            switch (response.statusCode()) {
+                case 200:
+                    // Erfolgreiche Antwort - weiter mit der Verarbeitung
+                    break;
+                case 401:
+                    return String.format("Ungültiger oder fehlender API-Key (HTTP 401)");
+                case 403:
+                    return String.format("Zugriff verweigert - möglicherweise ungültiger API-Key oder fehlende Berechtigung (HTTP 403)");
+                case 404:
+                    return String.format("Ressource nicht gefunden - Stadt '%s' existiert möglicherweise nicht oder API-Endpoint ist ungültig (HTTP 404)", city);
+                case 429:
+                    return String.format("API-Rate-Limit überschritten - zu viele Anfragen (HTTP 429)");
+                case 500:
+                    return String.format("Server-Fehler beim Wetterdienst (HTTP 500)");
+                default:
+                    return String.format("Wetterdaten für %s konnten nicht abgerufen werden (HTTP %d)", city, response.statusCode());
+            }
+
             JSONObject jsonResponse = new JSONObject(response.body());
             double temperature = jsonResponse.getJSONObject("main").getDouble("temp");
 
